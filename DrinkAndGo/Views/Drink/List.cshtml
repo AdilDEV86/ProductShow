@@ -1,0 +1,22 @@
+﻿@model DrinksListViewModel
+<head>
+    <title>
+        @ViewBag.Title
+    </title>
+
+    @{
+        Layout = "_Layout";
+    }
+
+    <title>Drink&Go</title>
+</head>
+<div>
+    <h3> Show all Drinks : </h3>
+</div>
+<marquee> @Model.CurrentCategory </marquee>
+@{
+    foreach (var drink in Model.Drinks)
+    {
+        @Html.Partial("DrinksSummary", drink)
+    }
+}
