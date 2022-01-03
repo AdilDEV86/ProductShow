@@ -16,7 +16,7 @@ namespace Product.MicroService.Models
         public string ImageUrl { get; set; }
         public string ImageThumbnailUrl { get; set; }
         public bool IsPreferredDrink { get; set; }
-        public bool InStock2 { get; set; }
+        public bool InStock { get; set; }
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
     }
