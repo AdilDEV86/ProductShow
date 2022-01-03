@@ -7,6 +7,7 @@ namespace Product.MicroService.Models
 {
     public class Product
     {
+        //commentaire 10
         public int ProductId { get; set; }
         public string Name { get; set; }
         public string ShortDescription { get; set; }
